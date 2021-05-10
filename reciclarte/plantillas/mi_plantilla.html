@@ -1,0 +1,30 @@
+<html>
+    <body>
+
+        <h2 style="color: blueviolet"> html plantilla</h2>
+
+        {# este es un comentarioi para python #}
+        {% comment %} este es un comentario mas largo 
+                  de mas de una linea
+        {% endcomment %}
+
+        {% if mi_nombre_persona == 'Claudia' %}
+            <p>El curso lo imparte el profesor opcional</p>
+        {% endif %}
+        <p>El nombre de la persona es: {{mi_nombre_persona.upper}}{{mi_apellido_persona}}</p>
+        {{mis_temas}}
+        <ul>
+            {%if mis_temas %} 
+                {% for i in mis_temas%}
+            
+                    <li> {{i}} </li>
+
+                {% endfor %}
+            {%else%}
+                <p>No hay elementos que mostrar</p>
+            {%endif%}
+        </ul>
+    <form action= />
+    </form>
+    </body>
+</html>
