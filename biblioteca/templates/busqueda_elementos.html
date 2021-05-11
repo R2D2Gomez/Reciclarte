@@ -1,12 +1,52 @@
 <html>
     <head>
         <title>Busqueda de elementos</title>
+        <style>
+                *{margin: 0; padding: 0; box-sizing: border-box;}
+                body { background-color: #FEF2E5 }
+                header{height: 6em; text-align: center; display: block; padding-top:2em; margin-bottom: 0.5em; border-bottom:grey solid;}
+                nav{height: 6em; text-align: right; display: block; font-family: 'Times New Roman', Times, serif;font-weight: bold;}
+                nav ul{list-style: none; display: inline-block; padding:18px;}
+                nav ul li{color: rgb(7, 7, 7);float: left;margin-top: 20px;}
+                nav ul li a {color: rgb(7, 7, 7);font-weight: bold;text-decoration: none;font-size: 2rem;padding: 18px; font: var(--fnt,var(--font_1));}
+                nav ul li a:hover{ color: rgb(7, 7, 7);}
+                .logo{margin: auto;height: 250px;width: 320px;text-align: center;  display: inline-block;}
+                /*.menu{margin: auto;height: 250px;width: 320px;text-align: center; list-style: none; display: inline-block;}*/
+                .logo h1{font-family: 'Times New Roman', Times, serif, cursive;font-size: 1rem; font-weight: bold;}
+                .separador{background-color: #413F3CE5; padding: 0.05rem; display: block;}
+                section{ padding: 2em;}
+                .boton{border-color: grey;color: grey;background-color:#FEF2E5; padding: 0.2em;border-radius: 2em;}
+
+        </style>
     </head>
     <body>
-        <form action="/buscar/" method="GET">
-         <input type="text" name="elemento">
-         <input type="submit" value="Buscar">
-        </form>
+        <header>
+            <div class="logo">
+                <img src="crab.png" alt="Reciclarte">
+                <h1>Porque el planeta somos todos</h1>
 
+            </div>
+        </header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="https://colegiocalatrava.wixsite.com/website-1">Inicio</a></li>
+                    <li><a href="https://colegiocalatrava.wixsite.com/website-1/como-reciclar"> reciclar</a></li>
+                    <li><a href="https://colegiocalatrava.wixsite.com/website-1/diccionario-de-reciclaje-por-objetos">Diccionario de reciclaje por objetos</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <br><br>
+            En esta secci&oacute;n podr&aacute; buscar diferentes objetos y la forma de darles una adecuada disposic&oacute;n final.
+            <br><br>
+            <form action="/buscar/" method="GET">
+                <input type="text" name="elemento">
+                <input type="submit" value="Buscar" class="boton">
+            </form>
+        </section>
+        <footer>
+
+        </footer>
     </body>
 </html>
